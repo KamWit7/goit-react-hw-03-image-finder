@@ -10,10 +10,10 @@ const Modal = ({ lightbox, setLightbox }) => {
     document.addEventListener("keydown", onEsc)
 
     return () => document.removeEventListener("keydown", onEsc)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const modalClose = () => setLightbox({ visibility: false, imgUrl: "" })
-
   return visibility ? (
     <div className={styles.Overlay} onClick={modalClose}>
       <div className={styles.Modal}>
