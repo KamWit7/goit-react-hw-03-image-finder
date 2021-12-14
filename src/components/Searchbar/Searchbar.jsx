@@ -10,7 +10,9 @@ const Searchbar = ({ onSubmit }) => {
   return (
     <header>
       <form className={styles.Searchbar} onSubmit={findImgs}>
-        <Button style={{ color: "red" }}>Search</Button>
+        <Button className={styles.SearchForm_button}>
+          <span className={styles.SearchForm_button_label}>Search</span>
+        </Button>
 
         <input
           className={styles.SearchForm_input}

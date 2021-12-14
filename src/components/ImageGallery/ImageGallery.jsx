@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
 import styles from "./ImageGallery.module.css"
 import ImageGalleryItems from "./../ImageGalleryItems/ImageGalleryItems"
 import Modal from "../Modal/Modal"
